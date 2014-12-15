@@ -6,5 +6,21 @@ angular.module('ShMXCV1', [
 ])
 
 .config(function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'home.html'});
+  $routeProvider.when('/', {
+    templateUrl: 'login.html'
+  });
+  $routeProvider.when('/home', {
+    templateUrl: 'home.html'
+  });
+	$routeProvider.when('/login', {
+    templateUrl: 'login.html'
+  });
+
+  /*
+  $routeProvider.otherwise({
+    redirectTo: '/login'
+  });
+  */
+  
+  //$routeProvider.when('/login', {templateUrl: 'login.html'});
 });
